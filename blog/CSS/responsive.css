@@ -1,0 +1,275 @@
+/*===================
+  Responsive Layout
+===================*/
+
+/*===================
+  iPads and Tablets
+===================*/
+@media screen and (max-width: 960px){
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid snow;
+        margin: 0;
+        padding: 4% 1% 3% 0;
+        list-style-type: none;
+        font-size: smaller;
+    }
+    
+    nav ul li {
+        padding-right: 2%;
+    }
+
+    nav ul, body {
+        font-weight: 200;
+    }
+
+    body {
+        background-color: #333333;
+        color: snow;
+        font-size: 20px;
+        word-wrap: break-word;
+        margin: 0 15%;
+    }
+
+    .featured-title {
+        max-width: 600px;
+        margin: 0;
+        text-align: center;
+        padding: 3%;
+    }
+    
+    .featured-title, .main-header h1, .article-header, 
+    .aside-header, footer h2, sub {
+        font-weight: 400;
+    }
+
+    .main-header h1 {
+        font-size: 30px;
+    }
+    
+    .search-box input {
+        padding: 3% 0;
+    }
+
+    .subscription input, .search-box input {
+        border: 1px solid snow;
+        background-color: black;
+        color: snow;
+        text-align: center;
+        font-family: "Encode Sans SC", sans-serif;
+    }
+
+    .search-icon {
+        width: 17px;
+    }
+    
+    .search-button {
+        background-color: black;
+        padding: 15%;
+        border: 1px solid snow;
+    }
+    
+    aside {
+        display: inline-flex;
+        margin: 0;
+        padding: 2%;
+    }
+
+    aside article {
+        max-width: 30%;
+        padding: 3% 6%;
+    }
+    
+    .subscription h2 {
+        font-size: 25px;
+    }
+
+    /*================
+       Author Card
+    ================*/
+
+    .card-body {
+        transition: none;
+    }
+
+    .card:hover .card-body, .card-back {
+        transform: none;
+    }
+
+    .card-body, .card-front, .card-back {
+        width: 100%;
+        height: 10%;
+    }
+    
+    .card-front, .card-back {
+        position: absolute;
+        backface-visibility: visible;
+    }
+
+    .card-back p {
+        display: none;
+    }
+
+    .social-media {
+        padding-top: 225px;
+        padding-right: 40px;
+    }
+    
+}
+
+/*======================
+   iPhone and Android
+======================*/
+
+@media screen and (max-width: 480px){
+
+    nav {
+        overflow: hidden;
+        background-color: black;
+        position: sticky;
+        top: 0px;
+        z-index: 1000;
+    }
+    
+    .logo {
+        grid-area: alpha;
+        text-align: center;
+    }
+
+    .home-link {
+        grid-area: bravo;
+    }
+
+    .ps-link {
+        grid-area: charlie;
+    }
+
+    .pc-link {
+        grid-area: delta;
+    }
+
+    .xbox-link {
+        grid-area: echo;
+    }
+
+    .search-box {
+        grid-area: foxtrot;
+    }
+
+    .search-button {
+        grid-area: golf;
+    }
+
+    nav ul {
+        justify-content: space-evenly;
+        border-bottom: 1px solid snow;
+        margin: 0;
+        padding: 5%;
+        list-style-type: none;
+        display: grid;
+        grid-template-areas: 
+        "alpha alpha"
+        "bravo charlie"
+        "delta echo"
+        "foxtrot golf";
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .search-button {
+        background-color: black;
+        border: 1px solid snow;
+    }
+
+    nav ul, body {
+        font-weight: 200;
+    }
+
+    .search-box input, .subscription input,
+    .search-button, .subscription button {
+        padding: 2%;
+    }
+    
+    body {
+        background-color: #333333;
+        color: snow;
+        font-size: 16px;
+        word-wrap: break-word;
+        margin: 0 15%;
+    }
+
+    /*==================
+     Homepage Settings
+    ==================*/
+
+    .featured-articles {
+        display: block;
+        padding-bottom: 3%;
+    }
+
+    .main-header {
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    .all-articles article {
+        display: block;
+        margin: 0;
+        padding-bottom: 5%;
+        text-align: center;
+    }
+
+    .article-img-link img {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .aside-header {
+        padding: 5% 3%;
+    }
+
+    .more-posts {
+        display: block;
+        margin: 0;
+        padding: .5%;
+        text-align: center;
+    }
+    
+    .more-posts img {
+        min-width: 240px;
+    }
+
+    .more-posts article {
+        padding: 4%;
+        min-width: 250px;
+    }
+
+    .more-posts .article-header {
+        font-size: 12px;
+    }
+
+    footer, .subscription h2  {
+        font-size: 16px;
+    }
+
+    /*=================================
+      Console and Blog Page Settings
+    =================================*/
+    
+    .container {
+        display: block;
+    }
+
+    .card {
+        width: 235px;
+        height: 300px;
+    }
+
+    .comments form {
+        display: none;
+    }
+}
+
+/*========END OF FILE!!!=========*/

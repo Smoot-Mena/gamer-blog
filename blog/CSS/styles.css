@@ -1,0 +1,123 @@
+@import "homepage.css";
+@import "console-settings.css";
+@import "responsive.css";
+
+/*===================
+   Global Settings
+===================*/
+
+html {
+    box-sizing: border-box;
+    background-color: black;
+    font-family: "Encode Sans SC", sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.menu-toggle {
+    opacity: 0;
+}
+
+nav {
+    overflow: hidden;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid snow;
+    margin: 0;
+    padding: 3% 3% 3% 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding-right: 3%;
+}
+
+body {
+    background-color: #333333;
+    color: snow;
+    font-size: 20px;
+    word-wrap: break-word;
+    margin: 0 15%;
+}
+
+main p {
+    font-size: small;
+}
+
+a {
+    text-decoration: none;
+    color: snow;
+}
+
+a:hover {
+    color: #01c7f6;
+}
+
+.content-wrap {
+    max-width: 1000px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 2rem 0;
+} 
+
+footer {
+    background-color: black;
+    padding: 3%;
+}
+
+.search-icon {
+    width: 20px;
+}
+
+.search-button {
+    background-color: black;
+    padding: 21%;
+}
+
+.search-box input {
+    padding: 5%;
+}
+
+.subscription input {
+    padding: 1%;
+}
+
+.subscription input, .search-box input {
+    border: 2px solid snow;
+    background-color: black;
+    color: snow;
+    text-align: center;
+}
+
+.subscription input:focus, .search-box input:focus {
+    outline: none;
+}
+
+.subscription input, .search-box input, .subscription button {
+    font-family: "Encode Sans SC", sans-serif;
+}
+
+.subscription button {
+    background-color: black;
+    color: snow;
+    padding: 1%;
+}
+
+a:hover, .subscription button:hover, .search-button:hover {
+    cursor: pointer;
+}
+
+.copyright {
+    float: right;
+}
+
+/*===========END OF FILE!!!=============*/
