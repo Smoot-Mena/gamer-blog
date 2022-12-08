@@ -29,16 +29,12 @@ nav {
 }
 
 nav ul {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     border-bottom: 1px solid snow;
     margin: 0;
     padding: 3% 3% 3% 0;
     list-style-type: none;
-}
-
-#navigationLogo {
-    width: 20%;
 }
 
 nav ul li {

@@ -2,9 +2,12 @@
   Global Variable Setup
 =======================*/
 
-let navBar = document.getElementById("navigationBar");
-let navList = document.getElementById("navigationList");
-let consoles = document.getElementsByClassName("console");
+const navigationBar = document.getElementById("navigationBar");
+const navigationList = document.getElementById("navigationList");
+const consoles = document.getElementsByClassName("console");
+// let listItem = document.createElement("li");
+// let link = document.createElement("a");
+
 
 /*=======================
    Dynamic Navigation
@@ -16,17 +19,18 @@ let consoles = document.getElementsByClassName("console");
  * */
 
 function navigationOrNah () {
-    for(let console in consoles){
-        let consoleName = console.title;
+    let filteredConsoles = [...new Set(consoles)];
+    for(let console of filteredConsoles){
+        // let consoleName = console.title;
         let listItem = document.createElement("li");
         let link = document.createElement("a");
-        // let consoleName = console.getAttribute("title");
+        let consoleName = console.getAttribute("title").toString();
         link.href = `${consoleName}.html`;
         link.textContent = consoleName;
         listItem.className = `${consoleName}-link`;
+        listItem.appendChild(link);
+        navigationList.appendChild(listItem);    
     };
-    listItem.appendChild(link);
-    navList.appendChild(listItem);
 }
 
 // Calling the navigation bar function
