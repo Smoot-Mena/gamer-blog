@@ -4,7 +4,7 @@
 
 .gamer-logo {
     max-width: 20%;
-    min-width: 100px;
+    min-width: 50px;
 }
 
 .featured-articles {
@@ -59,7 +59,7 @@
     margin: 0 3%;
 }
 
-.console {
+.category {
     color: #e9d13c;
 }
 

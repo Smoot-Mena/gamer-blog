@@ -2,11 +2,19 @@
   Global Variable Setup
 =======================*/
 
-const navigationBar = document.getElementById("navigationBar");
 const navigationList = document.getElementById("navigationList");
 const consoles = document.getElementsByClassName("console");
-// let listItem = document.createElement("li");
-// let link = document.createElement("a");
+
+
+
+/*=================
+  Filter Function
+=================*/
+
+/**@desc - This function is for filtering the list
+ * of consoles that are mentioned on the home page
+ * so that the list doesn't have repeats.*/
+
 
 
 /*=======================
@@ -19,18 +27,20 @@ const consoles = document.getElementsByClassName("console");
  * */
 
 function navigationOrNah () {
-    let filteredConsoles = [...new Set(consoles)];
-    for(let console of filteredConsoles){
-        // let consoleName = console.title;
-        let listItem = document.createElement("li");
-        let link = document.createElement("a");
-        let consoleName = console.getAttribute("title").toString();
-        link.href = `${consoleName}.html`;
-        link.textContent = consoleName;
-        listItem.className = `${consoleName}-link`;
-        listItem.appendChild(link);
-        navigationList.appendChild(listItem);    
-    };
+  let filteredConsoles = [...new Set(consoles)];
+  // let consoleArray = Object.values(consoles);
+  // let filteredConsoles = [...new Set(Object.values(consoles))];
+  for (let console of filteredConsoles) {
+    let listItem = document.createElement("li");
+    let link = document.createElement("a");
+    let consoleName = console.getAttribute("title").toString();
+    // if (console.getAttribute("title")) {};
+    link.href = `${consoleName}.html`;
+    link.textContent = consoleName;
+    listItem.className = `${consoleName}-link`;
+    listItem.appendChild(link);
+    navigationList.appendChild(listItem);
+  };
 }
 
 // Calling the navigation bar function
