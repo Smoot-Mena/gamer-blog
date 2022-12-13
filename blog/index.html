@@ -20,13 +20,15 @@
     <ul>
       <li class="logo"><a href="index.html"><img class="gamer-logo" src="IMAGES/Gamer-logo-white.png" alt="Gamer"></a>
       </li>
-      <li class="search-box">
-        <input type="search" placeholder="Search blogs">
-      </li>
-      <li><button class="search-button"><img class="search-icon" src="IMAGES/search-icon-white.png" alt="search-icon"></button>
-      </li>
+      <ul id="searchAndDynamic">
+        <li>
+          <input class="search-box" type="search" placeholder="Search blogs">
+        </li>
+        <li><button class="search-button"><img class="search-icon" src="IMAGES/search-icon-white.png" alt="search-icon"></button>
+        </li>
+        <ul id="navigationList"></ul>
+      </ul>  
     </ul>
-    <ul id="navigationList"></ul>
   </nav>
   <section class="featured-articles">
     <article class="left-featured">
@@ -54,7 +56,7 @@
     <article>
       <a class="article-img-link" href="BLOGS/call-of-duty.html">
         <img alt="playstation" src="IMAGES/pexels-playstation.png"></a>
-      <p><a class="console" href="playstation.html" title="PlayStation">PlayStation</a>
+      <p><a class="category console" href="playstation.html" title="PlayStation">PlayStation</a>
         | <time>February 21, 2022</time></p>
       <h5 class="article-header">
         <a href="BLOGS/call-of-duty.html">
@@ -76,7 +78,7 @@
     <article>
       <a class="article-img-link" href="BLOGS/wwe.html">
         <img alt="xbox" src="IMAGES/pexels-xbox.png"></a>
-      <p><a class="console" href="xbox.html" title="Xbox">Xbox</a>
+      <p><a class="category console" href="xbox.html" title="Xbox">Xbox</a>
         | <time>February 19, 2022</time></p>
       <h5 class="article-header">
         <a href="BLOGS/wwe.html">
@@ -98,7 +100,7 @@
     <article>
       <a class="article-img-link" href="BLOGS/flightsim.html">
         <img alt="pc" src="IMAGES/pexels-pc.png"></a>
-      <p><a class="console" href="pc.html" title="PC">PC</a>
+      <p><a class="category console" href="pc.html" title="PC">PC</a>
         | <time>February 17, 2022</time></p>
       <h5 class="article-header">
         <a href="BLOGS/flightsim.html">
@@ -146,6 +148,7 @@
     </article>
   </aside>
 </body>
+
 <footer>
   <section class="subscription">
     <h2>Subscribe to the Newsletter!</h2>

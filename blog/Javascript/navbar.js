@@ -6,17 +6,6 @@ const navigationList = document.getElementById("navigationList");
 const consoles = document.getElementsByClassName("console");
 
 
-
-/*=================
-  Filter Function
-=================*/
-
-/**@desc - This function is for filtering the list
- * of consoles that are mentioned on the home page
- * so that the list doesn't have repeats.*/
-
-
-
 /*=======================
    Dynamic Navigation
 =======================*/

@@ -2,11 +2,6 @@
   Homepage Settings
 ===================*/
 
-.gamer-logo {
-    max-width: 20%;
-    min-width: 50px;
-}
-
 .featured-articles {
     display: flex;
     max-width: 1200px;
