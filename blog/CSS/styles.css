@@ -26,10 +26,6 @@ html {
     min-width: 10rem;
 }
 
-.menu-toggle {
-    opacity: 0;
-}
-
 nav {
     overflow: hidden;
     background-color: black;
