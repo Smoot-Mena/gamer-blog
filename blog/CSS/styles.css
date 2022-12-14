@@ -16,8 +16,14 @@ html {
     box-sizing: inherit;
 }
 
-.menu-toggle {
-    opacity: 0;
+.logo {
+    max-width: 50%;
+    padding: .25rem 0 0;
+}
+
+.gamer-logo {
+    max-width: 45%;
+    min-width: 10rem;
 }
 
 nav {
@@ -33,12 +39,21 @@ nav ul {
     justify-content: space-between;
     border-bottom: 1px solid snow;
     margin: 0;
-    padding: 3% 3% 3% 0;
     list-style-type: none;
 }
 
-nav ul li {
-    padding-right: 3%;
+#searchAndDynamic {
+    border: none;
+    padding: 1rem 1rem 1rem;
+}
+
+#navigationList {
+    border-bottom: none;
+    padding: 0;
+}
+
+#navigationList li {
+    padding-left: 20px;
 }
 
 body {
@@ -80,18 +95,19 @@ footer {
 
 .search-button {
     background-color: black;
-    padding: 21%;
+    padding: 4px;
+    margin-left: 2px;
 }
 
-.search-box input {
-    padding: 5%;
+.search-box {
+    padding: 7px 0 7px 5px;
 }
 
 .subscription input {
     padding: 1%;
 }
 
-.subscription input, .search-box input {
+.subscription input, .search-box {
     border: 2px solid snow;
     background-color: black;
     color: snow;

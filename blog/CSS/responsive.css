@@ -5,26 +5,45 @@
 /*===================
   iPads and Tablets
 ===================*/
-@media screen and (max-width: 960px){
+@media screen and (min-width: 810px) and (max-width: 960px){
 
-    nav ul {
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px solid snow;
-        margin: 0;
-        padding: 4% 1% 3% 0;
-        list-style-type: none;
-        font-size: smaller;
+    .logo {
+        max-width: 35%;
+        padding: .25rem 0 0;
     }
     
-    nav ul li {
-        padding-right: 2%;
+    .gamer-logo {
+        max-width: 35%;
+        min-width: 5rem;
     }
-
+    
+    nav ul {
+        display: flex;
+        border-bottom: 1px solid snow;
+        margin: 0;
+        padding: 2% 1% 1% 0;
+        list-style-type: none;
+        font-size: medium;
+    }
+    
     nav ul, body {
-        font-weight: 200;
+        font-weight: 500;
     }
 
+    #searchAndDynamic {
+        border: none;
+        padding: 1rem 1rem 1rem;
+    }
+    
+    #navigationList {
+        border-bottom: none;
+        padding: 0;
+    }
+    
+    #navigationList li {
+        padding: 5px 1px 0;
+    }
+    
     body {
         background-color: #333333;
         color: snow;
@@ -42,7 +61,7 @@
     
     .featured-title, .main-header h1, .article-header, 
     .aside-header, footer h2, sub {
-        font-weight: 400;
+        font-weight: 700;
     }
 
     .main-header h1 {
@@ -50,7 +69,7 @@
     }
     
     .search-box input {
-        padding: 3% 0;
+        padding: 1% 0;
     }
 
     .subscription input, .search-box input {
@@ -84,6 +103,35 @@
     
     .subscription h2 {
         font-size: 25px;
+    }
+
+    footer p sub {
+        font-weight: 400;
+    }
+
+    /*=================================
+      Console and Blog Page Settings
+    =================================*/
+
+    .twitter img {
+        min-width: 20px;
+    }
+
+    .linkedIn img {
+        min-width: 20px;
+    }
+
+    .facebook img {
+        min-width: 20px;
+    }
+    
+    .container {
+        display: block;
+    }
+
+    .card {
+        width: 235px;
+        height: 300px;
     }
 
     /*================
@@ -120,84 +168,57 @@
 }
 
 /*======================
-   iPhone and Android
+   Android and Phones
 ======================*/
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 809.9px){
 
-    nav {
-        overflow: hidden;
-        background-color: black;
-        position: sticky;
-        top: 0px;
-        z-index: 1000;
+    .logo {
+        max-width: 5rem;
+        padding: .25rem 0 0;
     }
     
-    .logo {
-        grid-area: alpha;
-        text-align: center;
+    .gamer-logo {
+        max-width: 1rem;
     }
-
-    .home-link {
-        grid-area: bravo;
-    }
-
-    .ps-link {
-        grid-area: charlie;
-    }
-
-    .pc-link {
-        grid-area: delta;
-    }
-
-    .xbox-link {
-        grid-area: echo;
-    }
-
-    .search-box {
-        grid-area: foxtrot;
-    }
-
-    .search-button {
-        grid-area: golf;
-    }
-
+    
     nav ul {
-        justify-content: space-evenly;
+        display: flex;
         border-bottom: 1px solid snow;
         margin: 0;
-        padding: 5%;
+        padding: 2% 1% 0 0;
         list-style-type: none;
-        display: grid;
-        grid-template-areas: 
-        "alpha alpha"
-        "bravo charlie"
-        "delta echo"
-        "foxtrot golf";
-        gap: 10px;
-        font-size: 14px;
+        font-size: medium;
     }
-
-    .search-button {
-        background-color: black;
-        border: 1px solid snow;
-    }
-
+    
     nav ul, body {
-        font-weight: 200;
+        font-weight: 500;
     }
 
-    .search-box input, .subscription input,
-    .search-button, .subscription button {
-        padding: 2%;
+    #searchAndDynamic {
+        border: none;
+        padding: 0;
+    }
+    
+    #navigationList {
+        border-bottom: none;
+        padding: 0;
+    }
+    
+    #navigationList li {
+        padding-top: 2px;
     }
     
     body {
         background-color: #333333;
         color: snow;
-        font-size: 16px;
+        font-size: 20px;
         word-wrap: break-word;
         margin: 0 15%;
+    }
+
+    .search-box, .search-button {
+        display: none;
     }
 
     /*==================
@@ -228,22 +249,23 @@
 
     .aside-header {
         padding: 5% 3%;
+        text-align: center;
     }
 
     .more-posts {
-        display: block;
+        display: inline-block;
         margin: 0;
         padding: .5%;
         text-align: center;
     }
     
     .more-posts img {
-        min-width: 240px;
+        max-width: 80%;
     }
 
     .more-posts article {
         padding: 4%;
-        min-width: 250px;
+        max-width: 100%;
     }
 
     .more-posts .article-header {
@@ -257,6 +279,18 @@
     /*=================================
       Console and Blog Page Settings
     =================================*/
+
+    .twitter img {
+        min-width: 15px;
+    }
+
+    .linkedIn img {
+        min-width: 15px;
+    }
+
+    .facebook img {
+        min-width: 15px;
+    }
     
     .container {
         display: block;
@@ -268,7 +302,69 @@
     }
 
     .comments form {
+        padding: 0 5%;
+    }
+    
+    fieldset {
+        padding: 3%;
+        display: inline;
+    }
+    
+    fieldset textarea, fieldset input {
+        border: 2px solid snow;
+        background-color: black;
+        padding: 1%;
+        color: snow;
+        text-align: center;
+    }
+    
+    fieldset textarea:focus, fieldset input:focus {
+        outline: none;
+    }
+    
+    fieldset textarea, fieldset input, fieldset button {
+        font-family: "Encode Sans SC", sans-serif;
+    }
+    
+    fieldset button {
+        background-color: black;
+        color: snow;
+        padding: 1%;
+    }
+    
+    fieldset button:hover {
+        cursor: pointer;
+    }
+
+    /*================
+       Author Card
+    ================*/
+
+    .card-body {
+        transition: none;
+    }
+
+    .card:hover .card-body, .card-back {
+        transform: none;
+    }
+
+    .card-body, .card-front, .card-back {
+        width: 100%;
+        height: 10%;
+    }
+    
+    .card-front, .card-back {
+        position: absolute;
+        backface-visibility: visible;
+    }
+
+    .card-back p {
         display: none;
+    }
+
+    .social-media {
+        padding-top: 225px;
+        padding-right: 50px;
     }
 }
 
