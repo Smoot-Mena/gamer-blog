@@ -2,9 +2,7 @@
   Responsive Layout
 ===================*/
 
-/*===================
-  iPads and Tablets
-===================*/
+/*===iPads and Tablets===*/
 @media screen and (min-width: 810px) and (max-width: 960px){
 
     .logo {
@@ -109,9 +107,7 @@
         font-weight: 400;
     }
 
-    /*=================================
-      Console and Blog Page Settings
-    =================================*/
+    /*==Console and Blog Page Settings==*/
 
     .twitter img {
         min-width: 20px;
@@ -134,9 +130,7 @@
         height: 300px;
     }
 
-    /*================
-       Author Card
-    ================*/
+    /*====Author Card====*/
 
     .card-body {
         transition: none;
@@ -167,9 +161,7 @@
     
 }
 
-/*======================
-   Android and Phones
-======================*/
+/*====Android and Phones====*/
 
 @media screen and (max-width: 809.9px){
 
@@ -221,9 +213,7 @@
         display: none;
     }
 
-    /*==================
-     Homepage Settings
-    ==================*/
+    /*===Homepage Settings===*/
 
     .featured-articles {
         display: block;
@@ -276,9 +266,7 @@
         font-size: 16px;
     }
 
-    /*=================================
-      Console and Blog Page Settings
-    =================================*/
+    /*===Console and Blog Page Settings===*/
 
     .twitter img {
         min-width: 15px;
@@ -336,9 +324,7 @@
         cursor: pointer;
     }
 
-    /*================
-       Author Card
-    ================*/
+    /*===Author Card===*/
 
     .card-body {
         transition: none;
